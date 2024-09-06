@@ -1,0 +1,24 @@
+{
+	"info": {
+		"_postman_id": "a63b1679-d17c-49b2-8ccc-de2ba0c43e9a",
+		"name": "collection2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37891779"
+	},
+	"item": [
+		{
+			"name": "Get_Single_Incident_Path_Parameter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Get_Single_Incident",
+					"host": [
+						"Get_Single_Incident"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

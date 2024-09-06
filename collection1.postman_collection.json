@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "26202799-edcc-4b70-9da0-56e129df1da3",
+		"name": "collection1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37891779"
+	},
+	"item": [
+		{
+			"name": "Get_All_Incidents",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "vW0eDfd+A0V-",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev262949.service-now.com/api/now/table/incident",
+					"protocol": "https",
+					"host": [
+						"dev262949",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"incident"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_All_Change_Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "vW0eDfd+A0V-",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev262949.service-now.com/api/now/table/change_request",
+					"protocol": "https",
+					"host": [
+						"dev262949",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"change_request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_New_Incident",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_description\": \"Short Description 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev262949.service-now.com/api/now/table/incident",
+					"protocol": "https",
+					"host": [
+						"dev262949",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"incident"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_All_Change_Request_Assignment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Get_All_Change_Request",
+					"host": [
+						"Get_All_Change_Request"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
